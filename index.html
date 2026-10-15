@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon"
+type="image/png"
+sizes="32x32"
+href="./images/favicon-32x32.png"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap"
+rel="stylesheet"
+/>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<title>Frontend Mentor | Product preview card component</title>
+</head>
+<body
+class="min-h-screen bg-[#f2ebe3] flex flex-col items-center justify-center p-4 font-sans"
+>
+<main class="w-full max-w-[600px]">
+<article
+class="grid grid-cols-1 md:grid-cols-2 overflow-hidden rounded-xl bg-white"
+>
+<picture class="block">
+<source
+media="(min-width: 768px)"
+srcset="./images/image-product-desktop.jpg"
+/>
+<img src="./images/image-product-mobile.jpg"
+alt="Gabrielle Chanel perfume bottle"
+class="h-full w-full object-cover"
+/>
+</picture>
+<div class="flex flex-col justify-center p-6 md:p-8">
+<p
+class="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-[#6c7289]"
+>
+Perfume
+</p>
+<h1 class="mb-4 font-serif text-3xl font-bold leading-tight text-[#1c232b]">
+Gabrielle Essence Eau De Parfum
+</h1>
+<p class="mb-6 text-sm leading-relaxed text-[#6c7289]">
+A floral, solar and voluptuous interpretation composed by Olivier
+Polge, Perfumer-Creator for the House of CHANEL.
+</p>
+<div class="mb-6 flex items-center gap-5">
+<p class="font-serif text-3xl font-bold text-[#3c8067]">$149.99</p>
+<del class="text-sm text-[#6c7289]">$169.99</del>
+</div>
+<button
+type="button"
+class="flex w-full items-center justify-center gap-3 rounded-lg bg-[#3c8067] py-4 text-sm font-bold text-white transition-colors hover:bg-[#1a4031] focus:outline-none focus:ring-2 focus:ring-[#1a4031] focus:ring-offset-2"
+>
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="16"
+height="16"
+fill="none"
+viewBox="0 0 16 16"
+aria-hidden="true">
+<path
+d="M1.5 2.5h2l2 8h7l2-6H4"
+stroke="currentColor"
+stroke-width="1.5"
+stroke-linecap="round"
+stroke-linejoin="round"
+/>
+<circle cx="6.5" cy="13.5" r="1" fill="currentColor" />
+<circle cx="11.5" cy="13.5" r="1" fill="currentColor" />
+</svg>
+Add to Cart
+</button>
+</div>
+</article>
+</main>
+<footer class="mt-5 text-center text-[11px] text-[#6c7289]">
+Challenge by
+<a
+href="https://www.frontendmentor.io?ref=challenge"
+class="text-[#3c8067] underline"
+>Frontend Mentor</a>. Coded by <a href="#" class="text-[#3c8067] underline">Nebiyat Hawi</a>.
+</footer>
+</body>
+</html>
